@@ -1,2 +1,2 @@
 # zr-lightbox
-Convert all content images except those with classes that are disabled in the settings.
+WordPress plugin that gives the admin an option to convert all content images into lightbox.
