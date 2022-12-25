@@ -1,0 +1,31 @@
+{
+    "name": "zr-lightbox",
+    "title": "ZIOR Lightbox",
+    "description": "Convert all content images into lightbox",
+    "version": "0.1.0",
+    "homepage": "https://ziorweb.dev",
+    "author": {
+        "name": "Reyborn Webservices",
+        "url": "https://ziorweb.dev"
+    },
+    "license": "GPL 2.0",
+    "scripts": {
+        "build": "wp-scripts build",
+        "start": "wp-scripts start"
+    },
+    "dependencies": {
+        "@wordpress/scripts": "^24.6.0",
+        "lightbox2": "^2.11.3"
+    },
+    "devDependencies": {
+		"css-loader": "^6.7.2",
+		"file-loader": "^6.2.0",
+		"mini-css-extract-plugin": "^2.7.1",
+		"sass": "^1.56.1",
+		"sass-loader": "^13.2.0",
+		"style-loader": "^3.3.1",
+        "autoprefixer": "^9.0.0",
+        "webpack": "^5.75.0",
+        "webpack-cli": "^5.0.0"
+    }
+}
