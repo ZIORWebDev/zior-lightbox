@@ -6,7 +6,7 @@ function zior_lightbox_frontend_scripts() {
 	wp_enqueue_style( 'zior-lightbox', ZR_LIGHTBOX_PLUGIN_URL . 'build/zr-lightbox.min.css' );
 	wp_enqueue_script( 'zior-lightbox', ZR_LIGHTBOX_PLUGIN_URL . 'build/zr-lightbox.min.js', [ 'jquery' ], ZR_LIGHTBOX_VERSION, true );
 
-	$zrl_disable_on_href = get_option( 'zrl_disable_on_href', false );
+	$zrl_disable_on_href = get_option( 'zrl_disable_on_href', true );
 	$zrl_allowed_classes = get_option( 'zrl_allowed_classes' );
 	$zrl_allowed_parent_classes = get_option( 'zrl_allowed_parent_classes' );
 	$zrl_disabled_classes = get_option( 'zrl_disabled_classes' );
