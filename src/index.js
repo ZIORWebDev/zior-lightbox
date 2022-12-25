@@ -3,25 +3,24 @@ import "./style.scss";
 
 jQuery(window).on("load", function() {
     jQuery("img").on("load", function() {
-        var _this = this;
         // If the image is already wrapped with <a>, skip.
-        if (jQuery(this).parent("a").length > 0) {
-            return false;
-        }
-        
-        if (ziorLB.allowed_classes.length > 0 && !isAllowedClasses(_this, ziorLB.allowed_classes)) {
+        if (ziorLB.disable_on_href == "1" && jQuery(this).parent("a").length > 0) {
             return false;
         }
 
-        if (ziorLB.allowed_parent_classes.length > 0 && !isAllowedParentClasses(_this, ziorLB.allowed_parent_classes)) {
+        if (ziorLB.allowed_classes.length > 0 && !isAllowedClasses(this, ziorLB.allowed_classes)) {
             return false;
         }
 
-        if (ziorLB.disabled_classes.length > 0 && isDisabledClasses(_this, ziorLB.disabled_classes)) {
+        if (ziorLB.allowed_parent_classes.length > 0 && !isAllowedParentClasses(this, ziorLB.allowed_parent_classes)) {
             return false;
         }
 
-        if (ziorLB.disabled_classes.length > 0 && isDisabledParentClasses(_this, ziorLB.disabled_parent_classes)) {
+        if (ziorLB.disabled_classes.length > 0 && isDisabledClasses(this, ziorLB.disabled_classes)) {
+            return false;
+        }
+
+        if (ziorLB.disabled_classes.length > 0 && isDisabledParentClasses(this, ziorLB.disabled_parent_classes)) {
             return false;
         }
 
@@ -29,7 +28,14 @@ jQuery(window).on("load", function() {
         var imgTarget = this.src;
         if (this.src.includes("res.cloudinary.com")) {
             imgTarget = this.src.replace(/\/image\/upload\/(.*?)\//g, "/image/upload/");
+        }else{
+            // Try to get full image from srcset
+            if (this.srcset) {
+                var srcset = this.srcset.match(/(http(s?):)([/|.|\w|\s|-])*\.(?:jpg|gif|png|webp|avif)/g);
+                imgTarget = srcset.pop() || "";
+            }
         }
+
         jQuery(this).wrap(`<a href="${imgTarget}" data-lightbox="lightbox"></a>`);
     })
     .each(function() {
