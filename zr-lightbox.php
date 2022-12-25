@@ -33,9 +33,6 @@ class ZIOR_Lightbox {
 	 */
 	protected $version = '0.1.0';
 
-	private function __construct() {
-	}
-
 	/**
 	 * Get instance.
 	 *
