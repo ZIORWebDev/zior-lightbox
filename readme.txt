@@ -8,11 +8,11 @@ Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Convert all content images into Lightbox.
+Convert all content images except those with classes that is disabled in the settings will be converted to lightbox.
 
 == Description ==
 
-Convert all content images into Lightbox.
+Convert all content images except those with classes that is disabled in the settings will be converted to lightbox.
 
 Features
 
