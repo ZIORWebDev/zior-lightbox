@@ -46,10 +46,10 @@ class ZIOR_Lightbox_Options_Page {
 			__( 'ZIOR Lightbox', 'zior-lightbox' ),
 			'manage_options',
 			'zior_lightbox_settings',
-			array(
+			[
 				$this,
 				'settings_page'
-			)
+			]
 		);
 	}
 	

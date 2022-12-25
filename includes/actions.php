@@ -1,6 +1,6 @@
 <?php
 /**
- * Enqueue plugin JS and CSS
+ * Enqueue JS and CSS assets
  */
 function zior_lightbox_frontend_scripts() {
 	wp_enqueue_style( 'zior-lightbox', ZR_LIGHTBOX_PLUGIN_URL . 'build/zr-lightbox.min.css' );
