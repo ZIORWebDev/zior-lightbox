@@ -48,7 +48,7 @@ class ZIOR_Lightbox_Options_Page {
 			'zior_lightbox_settings',
 			[
 				$this,
-				'settings_page'
+				'settings_page',
 			]
 		);
 	}
@@ -74,25 +74,25 @@ class ZIOR_Lightbox_Options_Page {
 				?></p>
 			<br/>
 			<label for="zrl_allowed_classes"><?php echo esc_html__( 'Allow lightbox on the following class', 'zior-lightbox'); ?></label><br/>
-			<textarea name="zrl_allowed_classes" row="5"><?php echo $zrl_allowed_classes; ?></textarea>
+			<textarea name="zrl_allowed_classes" row="5"><?php echo esc_textarea( $zrl_allowed_classes ); ?></textarea>
 			<p class="description"><?php
 				echo esc_html__('Allow lightbox on the specified classes only. Enter class separated by comma (,).', 'zior-lightbox');
 				?></p>
 			<br/>
 			<label for="zrl_allowed_parent_classes"><?php echo esc_html__( 'Allow lightbox on the following parent class', 'zior-lightbox'); ?></label><br/>
-			<textarea name="zrl_allowed_parent_classes" row="10"><?php echo $zrl_allowed_parent_classes; ?></textarea>
+			<textarea name="zrl_allowed_parent_classes" row="10"><?php echo esc_textarea( $zrl_allowed_parent_classes ); ?></textarea>
 			<p class="description"><?php
 				echo esc_html__('Allow lightbox on the specified parent classes only. Enter class separated by comma (,).', 'zior-lightbox');
 				?></p>
 			<br/>
 			<label for="zrl_disabled_classes"><?php echo esc_html__( 'Disable lightbox on the following class', 'zior-lightbox'); ?></label><br/>
-			<textarea name="zrl_disabled_classes" row="5"><?php echo $zrl_disabled_classes; ?></textarea>
+			<textarea name="zrl_disabled_classes" row="5"><?php echo esc_textarea( $zrl_disabled_classes ); ?></textarea>
 			<p class="description"><?php
 				echo esc_html__( 'Disabled lightbox on the specified classes. Enter class separated by comma (,).', 'zior-lightbox' );
 				?></p>
 			<br/>
 			<label for="zrl_disabled_parent_classes"><?php echo esc_html__( 'Disable lightbox on the following parent class', 'zior-lightbox'); ?></label><br/>
-			<textarea name="zrl_disabled_parent_classes" row="5"><?php echo $zrl_disabled_parent_classes; ?></textarea>
+			<textarea name="zrl_disabled_parent_classes" row="5"><?php echo esc_textarea( $zrl_disabled_parent_classes ); ?></textarea>
 			<p class="description"><?php
 				echo esc_html__('Disable lightbox on the specific parent class. Enter class separated by comma (,).', 'zior-lightbox');
 				?></p>
