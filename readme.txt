@@ -8,11 +8,9 @@ Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Convert all content images except those with classes that is disabled in the settings.
-
 == Description ==
 
-Convert all content images except those with classes that is disabled in the settings.
+Convert all images into lightbox except for those images that are part of the exceptions.
 
 Features
 
@@ -28,6 +26,6 @@ Initial release.
 
 = Default settings =
 
-When activated, all images except those with classes that is disabled in the settings will be converted to lightbox.
+When activated, all images will be converted into light box except for those excempted in the settings.
 
 == Screenshots ==
