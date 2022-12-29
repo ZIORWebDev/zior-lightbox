@@ -27,5 +27,6 @@ Initial release.
 = Default settings =
 
 When activated, all images will be converted into light box except for those excempted in the settings.
+To add exceptions, go to Settings -> ZIOR Lightbox
 
 == Screenshots ==
