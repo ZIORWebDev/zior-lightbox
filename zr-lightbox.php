@@ -6,7 +6,7 @@
  * Description: Convert all content images into lightbox.
  * Version: 0.1.0
  * Author:      Rey Calantaol
- * Author URI:  https://github.com/reygcalantaol
+ * Author URI:  https://github.com/ziorweb-dev
  * License:     GPLv2 or later
  * License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  * Text Domain: zior-lightbox
