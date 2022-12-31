@@ -5,10 +5,10 @@
  * Plugin Name: ZIOR Lightbox
  * Description: Convert all content images into lightbox.
  * Version: 0.1.0
- * Author:      Rey Calantaol
+ * Author:      ZIORWeb.Dev
  * Author URI:  https://github.com/ziorweb-dev
- * License:     GPLv2 or later
- * License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ * License:     GPLv3
+ * License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
  * Text Domain: zior-lightbox
  * Requires at least: 4.9
  * Tested up to: 6.1
