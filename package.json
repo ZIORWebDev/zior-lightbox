@@ -9,6 +9,10 @@
         "url": "https://github.com/ZIORWebDev"
     },
     "license": "GPL 2.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ZIORWebDev/zior-elementor-addon.git"
+    },
     "scripts": {
         "build": "wp-scripts build",
         "start": "wp-scripts start"
