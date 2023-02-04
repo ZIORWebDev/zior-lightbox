@@ -17,6 +17,8 @@ Features
 * Supports cloudinary
 * Automatic lightbox with exception
 
+Read documentation <a href="https://ziorweb.dev/docs/zior-lightbox.html" target="_blank">here</a>
+
 == Changelog ==
 
 = 0.1.0 =
